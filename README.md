@@ -5,21 +5,19 @@
 https://github.com/ISOTOPE-Studio/SperateCMD/releases
 
 ## 使用方法
-输入命令是将需要单独输入的地方用 !arg 代替，并且在最后加上由谁执行命令（player或console）
+输入命令是将需要单独输入的地方用 !arg 代替
 
 例子：
 
-`/manuaddp !arg essentials.warp console`
+`/manuaddp !arg essentials.warp`
 
-`/tp !arg player`
+`/tp !arg`
 
-`/op !arg console`
-
-### 玩家
+`/op !arg`
 
 例子：
 
-玩家被迫或主动输入：`/tp !arg player`
+玩家被迫或主动输入：`/tp !arg
 
 插件提醒玩家玩家输入需要传送的玩家
 
@@ -27,8 +25,8 @@ https://github.com/ISOTOPE-Studio/SperateCMD/releases
 
 之后就会以玩家的身份输入 `/tp Mars`
 
-### 后台
+## 配置文件
 
-例子：
+玩家必须在以下时间内输入命令，一秒为单位
 
-## 权限:
+`timeout: 3.0`
