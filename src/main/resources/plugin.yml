@@ -1,0 +1,7 @@
+name: SeparateCMD
+main: cc.isotopestudio.SeparateCMD.separatecmd.SeparateCMD
+
+author: Mars
+description: Separated CMD
+website: http://isotopestudio.cc
+version: 1.0
