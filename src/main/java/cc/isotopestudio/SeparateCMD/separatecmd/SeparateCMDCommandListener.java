@@ -31,7 +31,7 @@ public class SeparateCMDCommandListener implements Listener {
 		for (int i = 1; i < args.length; i++) {
 			if (args[i].equals("!arg")) {
 				SeparateCMDHandle.add(event.getPlayer().getName(), command);
-				event.getPlayer().sendMessage((new StringBuilder()).append(ChatColor.AQUA).append("  请输入值").toString());
+				//event.getPlayer().sendMessage((new StringBuilder()).append(ChatColor.AQUA).append("  请输入值").toString());
 				event.setCancelled(true);
 				return;
 			}
