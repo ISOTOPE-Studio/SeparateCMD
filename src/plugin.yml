@@ -1,7 +1,11 @@
-name: SeparateCMD
-main: cc.isotopestudio.SeparateCMD.separatecmd.SeparateCMD
+name: SeparateCMDtm
+main: cc.isotopestudio.SeparateCMD.SeparateCMDtm
 
 author: Mars
 description: Separated CMD
 website: http://isotopestudio.cc
 version: 1.0.1
+commands:
+  newtm:
+    description: A command
+    usage: /<command> - Get Information
