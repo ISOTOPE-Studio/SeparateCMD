@@ -4,15 +4,15 @@ import java.util.HashMap;
 
 import org.bukkit.entity.Player;
 
-public class SeparateCMDHandle {
+class SeparateCMDHandle {
 
-	static HashMap<String, String> map = new HashMap<String, String>();
+	static HashMap<String, String> map = new HashMap<>();
 
-	public static void add(String name, String command) {
+	static void add(String name, String command) {
 		map.put(name, command);
 	}
 
-	public static void process(Player player, String arg) {
+	static void process(Player player, String arg) {
 		String command = map.get(player.getName());
 		StringBuilder newCommand = new StringBuilder();
 		String[] args = command.split(" ");
@@ -20,10 +20,9 @@ public class SeparateCMDHandle {
 			if (args[i].equals("!arg")) {
 				args[i] = arg;
 			}
-			newCommand.append(args[i] + " ");
+			newCommand.append(args[i]).append(" ");
 		}
 		map.remove(player.getName());
-		//player.sendMessage(newCommand.toString());
 		player.performCommand(newCommand.toString().substring(1));
 	}
 
