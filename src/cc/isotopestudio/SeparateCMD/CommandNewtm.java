@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
  * Copyright ISOTOPE Studio
  */
 class CommandNewtm implements CommandExecutor {
+    static final String msg = S.toPrefixYellow("请在聊天框内输入你的称号名") + S.toRed("<7个中文或者7个字母>");
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -18,13 +19,16 @@ class CommandNewtm implements CommandExecutor {
                 sender.sendMessage(S.toPrefixRed("必须要玩家才能执行"));
                 return true;
             }
-            /*
-            if (!sender.hasPermission("vip.admin")) {
+
+            if (!sender.hasPermission("newtm")) {
                 sender.sendMessage(S.toPrefixRed("你没有权限"));
                 return true;
-            }*/
+            }
             SeparateCMDHandle.add(sender.getName());
-            sender.sendMessage(S.toPrefixYellow("请输入新称号"));
+            sender.sendMessage(msg);
+            sender.sendMessage(msg);
+            sender.sendMessage(msg);
+            return true;
         }
         return false;
     }

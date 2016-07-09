@@ -18,7 +18,7 @@ class SeparateCMDHandle {
     }
 
     static void process(Player player, String nickname) {
-        String command = "/tm give " + player.getName() + " " + nickname + " null & e尊贵VIP;&c自定义称号";
+        String command = "tm give " + player.getName() + " " + nickname + " null &e尊贵VIP;&c自定义称号";
         Bukkit.dispatchCommand(console, command);
     }
 
